@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+.image {
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+}
+
+.info {
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px;
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 0.75rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+p, del, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+p, del {
+    color:#6C7289;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 24px;
+    color:#1C232B;
+}
+
+.paragraph {
+    font-size: 0.8rem;
+    line-height: 1.75;
+    font-weight: 500;
+    margin-bottom: 29px;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color:#3D8168;
+    margin-right: 20px;
+}
+
+del {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+button{
+    background-color:#3D8168;
+    width: 100%;
+    padding-block: 15px;
+    color: white;
+    font-weight: 700;
+    font-size: 0.875rem;
+    border: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-right: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color:#1A4032;
+    transition: 300ms ease-in;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 425px) {
+    main {
+        grid-template-columns: 1fr;
+        width: 91.5%;
+    }
+
+    .image {
+        background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        height: 240px;
+    }
+
+    .info {
+        padding: 24px;
+    }
+
+}
