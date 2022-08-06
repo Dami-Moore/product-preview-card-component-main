@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://dami-moore.github.io/product-preview-card-component-main/)
+- Live Site URL: [live site](https://dami-moore.github.io/product-preview-card-component-main/)
 
 ## My process
 
